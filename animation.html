@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#a_wrapper{
+   			overflow: hidden;
+   			position: relative;
+   			height: 700px;
+   			width: 100%;
+		}
+		#transition{
+			position:absolute;
+			width:100%;
+			height:100%;
+			background-color: black;
+			opacity: 1;
+			-webkit-animation-name: light;
+			-webkit-animation-duration: 3s;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay: 6s;
+		}
+		#a{
+			position: absolute;
+			height: 700px;
+			width: 50%;
+			-webkit-animation-name: slideleft;
+			-webkit-animation-duration: 5s;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay: 1s;
+		}
+		
+		@-webkit-keyframes slideleft{
+			0% {
+				margin-left: 0%;
+			}
+			100% {
+				margin-left:-50%;
+			}
+		}
+
+		#b{
+			position: absolute;
+			height: 700px;
+			width: 50%;
+			right: 0px;
+			-webkit-animation-name: slideright;
+			-webkit-animation-duration: 5s;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay: 1s;
+		}
+
+		@-webkit-keyframes slideright{
+			from {
+				margin-right: 0%;
+				margin-left: 0%;
+			}
+			to {
+				margin-right: -50%;
+				margin-left: 100%;
+			}
+		}
+		@-webkit-keyframes light{
+			0%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 0;
+			}
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div id = "a_wrapper">
+	<div id="transition"></div>
+	<img id="a" src="http://fc05.deviantart.net/fs51/i/2009/277/d/1/Red_Curtain___Stock_by_GothicBohemianStock.jpg"/>
+	<img id="b" src="http://fc05.deviantart.net/fs51/i/2009/277/d/1/Red_Curtain___Stock_by_GothicBohemianStock.jpg"/>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+	
+#center{
+	margin: 0 auto;
+}
+/*div{
+	width:900px;
+	height:640px;
+	margin-top:70px;
+	margin-left:170px;
+}*/
+h1{
+	font-family: "Poiret One", cursive;
+	font-size:60px;
+	margin-top:20px;
+	text-align:center;
+	font-style:bold;
+}
+#wrapper{
+	text-align: center;
+}
+
+		#a_wrapper{
+   			overflow: hidden;
+   			position: absolute;
+   			height: 100%;
+   			width: 100%;
+		}
+		#transition{
+			pointer-events:none;
+			position:absolute;
+			width:100%;
+			height:100%;
+			background-color: black;
+			opacity: 1;
+			-webkit-animation-name: light;
+			-webkit-animation-duration: 3s;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay: 6s;
+		}
+		#a{
+			position: absolute;
+			height: 100%;
+			width: 50%;
+			-webkit-animation-name: slideleft;
+			-webkit-animation-duration: 5s;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay: 1s;
+		}
+		
+		@-webkit-keyframes slideleft{
+			0% {
+				margin-left: 0%;
+			}
+			100% {
+				margin-left:-50%;
+			}
+		}
+
+		#b{
+			position: absolute;
+			height: 100%;
+			width: 50%;
+			right: 0px;
+			-webkit-animation-name: slideright;
+			-webkit-animation-duration: 5s;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay: 1s;
+		}
+
+		@-webkit-keyframes slideright{
+			from {
+				margin-right: 0%;
+				margin-left: 0%;
+			}
+			to {
+				margin-right: -50%;
+				margin-left: 100%;
+			}
+		}
+		@-webkit-keyframes light{
+			0%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 0;
+				display: none;
+			}
+		}
+		map{
+			z-index: 1;
+		}
