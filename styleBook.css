@@ -1,3 +1,23 @@
 p{
-	color: green;
+	font-size: 25px;
+}
+
+#book{
+	/*margin: 0 40px 0 40px;*/
+	margin: 0 auto;
+	max-width: 1000px;
+	min-width: 800px;
+}
+
+#page_turn{
+	/*display: inline;*/
+	margin: 0 auto;
+	max-width: 1000px;
+	min-width: 800px;
+	text-align: center;
+}
+
+.inline{
+	display: inline;
+	margin: 15px;
 }

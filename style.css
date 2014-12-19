@@ -1,20 +1,97 @@
-	
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+End reset
+*/
+
+
+
+body{
+	font-family: "Poiret One", cursive;
+	background-image: url("wallpaper.jpg");
+	/*background-repeat: no-repeat;*/
+	/*background-size: 100%;*/
+	background: cover;
+}	
+
+
 #center{
 	margin: 0 auto;
 }
-/*div{
-	width:900px;
-	height:640px;
-	margin-top:70px;
-	margin-left:170px;
-}*/
+
 h1{
-	font-family: "Poiret One", cursive;
-	font-size:60px;
-	margin-top:20px;
+	padding: 20px;
+	font-size:80px;
+	color: #B88A00;
 	text-align:center;
 	font-style:bold;
 }
+
+#frame{
+	margin: 0 auto;
+	text-align: center;
+	position: fixed;
+	width: 50%;
+	left: 25%;
+	top: 25%;
+}
+
+
+
+h2{
+	color:#B88A00;
+	font-size: 100px;
+}
+
+
+
+
 #wrapper{
 	text-align: center;
 }
@@ -24,19 +101,23 @@ h1{
    			position: absolute;
    			height: 100%;
    			width: 100%;
+   			min-width: 900px;
 		}
 		#transition{
 			pointer-events:none;
 			position:absolute;
 			width:100%;
-			height:100%;
-			background-color: black;
+			/*height: 100%;*/
+			margin: 0 auto;
 			opacity: 1;
 			-webkit-animation-name: light;
 			-webkit-animation-duration: 3s;
 			-webkit-animation-fill-mode: forwards;
 			-webkit-animation-delay: 6s;
 		}
+
+
+
 		#a{
 			position: absolute;
 			height: 100%;
@@ -77,6 +158,7 @@ h1{
 				margin-left: 100%;
 			}
 		}
+
 		@-webkit-keyframes light{
 			0%{
 				opacity: 1;
